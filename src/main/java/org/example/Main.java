@@ -38,6 +38,7 @@ public class Main {
 //            // Create Planets
 //
 //            Planet planet1 = new Planet();
+//            planet1.setId("TEST");
 //            planet1.setName("Moon");
 //            planet1.setDistance(87.2);
 //            planetService.createPlanet(planet1);
