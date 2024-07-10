@@ -23,7 +23,7 @@ public class PlanetCrudService {
         }
     }
 
-    public Planet readPlanet(int id) {
+    public Planet readPlanet(String id) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             return session.get(Planet.class, id);
         }
@@ -43,7 +43,7 @@ public class PlanetCrudService {
         }
     }
 
-    public void deletePlanet(int id) {
+    public void deletePlanet(String id) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();

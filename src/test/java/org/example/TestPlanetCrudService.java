@@ -17,6 +17,7 @@ public class TestPlanetCrudService {
     public void setup() {
         planetService = new PlanetCrudService();
         planet = new Planet();
+        planet.setId("TEST");
         planet.setName("Test Planet");
         planet.setDistance(143.0);
         planetService.createPlanet(planet);
